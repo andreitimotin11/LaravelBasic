@@ -15,12 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/page/{id_cat}/{id}', function ($id_cat,$id) {
+Route::get('/page/{id_cat}/{id}', function ($id,$id_cat) {
      echo '<pre>';
-     echo $id;
-     echo $id_cat;
-     echo config('app.locale');
-     echo env('APP_ENV');
+     //echo $id;
+     //echo $id_cat;
+     echo $id_cat . '|' . $id ;
+    // echo config('app.locale');
+    // echo env('APP_ENV');
 });
 Route::get('/comments', function (){
     print_r($_POST);
