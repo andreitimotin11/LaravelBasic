@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/page/{id_cat}/{id}', function ($id,$id_cat) {
+
+Route::get('/page/{id_cat?}/{id}', function ($id_cat = 50,$id) {
      echo '<pre>';
      //echo $id;
      //echo $id_cat;

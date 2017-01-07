@@ -24,8 +24,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state relative-caret-position="209">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -458,7 +458,7 @@
       <workItem from="1483688217484" duration="6067000" />
       <workItem from="1483719487401" duration="1344000" />
       <workItem from="1483784129738" duration="3069000" />
-      <workItem from="1483802984700" duration="5840000" />
+      <workItem from="1483802984700" duration="6605000" />
     </task>
     <task id="LOCAL-00001" summary="add some routes">
       <created>1483811010394</created>
@@ -488,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483816289223</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add some routes">
+      <created>1483816840182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1483816840182</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31065000" />
+    <option name="totallyTimeSpent" value="31830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="502" y="70" width="915" height="672" extended-state="0" />
@@ -933,8 +940,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="209">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
