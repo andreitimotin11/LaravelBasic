@@ -15,19 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pages/{id_cat}/{id}', function ($id) {
+Route::get('/page/{id_cat}/{id}', function ($id) {
      echo '<pre>';
      echo $id;
  //    print_r($_ENV);
      echo config('app.locale');
-     echo Config::set('app.locale', 'ru');
-     echo Config::get('app.locale');
-     echo env('APP_ENV');
-     echo '<pre>';
+    echo env('APP_ENV')
 });
 Route::get('/comments', function (){
     print_r($_POST);
 });
-Route:get('/page',function (){
-    echo "Hello!";
+Route::get('/page',function (){
+    echo "<pre>";
+    print_r($_ENV);
+    echo "<pre>";
 });
