@@ -16,10 +16,11 @@ Route::get('/', function () {
 });
 
 
-Route::get('/page/{id}', function ($id_cat,$id) {
+Route::get('/page/{id}', function ($id) {
      echo '<pre>';
      echo $id ;
 })->where('id', '[0-9]+');
+
 Route::get('/comments', function (){
     print_r($_POST);
 });
