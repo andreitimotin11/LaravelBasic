@@ -16,14 +16,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/page/{id_cat}/{id?}', function ($id_cat,$id = 50) {
+Route::get('/page/{id}', function ($id_cat,$id) {
      echo '<pre>';
-     //echo $id;
-     //echo $id_cat;
-     echo $id_cat . '|' . $id ;
-    // echo config('app.locale');
-    // echo env('APP_ENV');
-});
+     echo $id ;
+})->where('id', '[0-9]+');
 Route::get('/comments', function (){
     print_r($_POST);
 });
