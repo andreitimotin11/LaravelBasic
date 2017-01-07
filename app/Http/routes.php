@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/page/{id_cat}/{id}', function ($id) {
+Route::get('/pages/{id_cat}/{id}', function ($id) {
      echo '<pre>';
      echo $id;
  //    print_r($_ENV);
@@ -28,4 +28,6 @@ Route::get('/page/{id_cat}/{id}', function ($id) {
 Route::get('/comments', function (){
     print_r($_POST);
 });
-//Route:get('/',function (){});
+Route:get('/page',function (){
+    echo "Hello!";
+});
