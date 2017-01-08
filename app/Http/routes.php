@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/',['as'=>'home','uses' => 'FirstController@show']);
+Route::get('/',['as'=>'home','uses' => 'FirstController@show']
+);
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', ['uses' => 'Admin\Core@getArticles',
  'as'=> 'articles']);
