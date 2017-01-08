@@ -40,7 +40,7 @@ class CoreResource extends Controller
     public function store(Request $request)
     {
         //
-        echo $_POST;
+        print_r($_POST);
     }
 
     /**
