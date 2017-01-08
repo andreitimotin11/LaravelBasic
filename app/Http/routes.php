@@ -24,3 +24,11 @@ Route::get('/page/{id}', function ($id) {
 Route::get('/comments', function (){
     print_r($_POST);
 });
+Route::group([], function (){
+    Route::get('page/create', function (){
+        echo 'page/create';
+    });
+    Route::get('page1/create', function (){
+        echo 'page/edit';
+    });
+});
