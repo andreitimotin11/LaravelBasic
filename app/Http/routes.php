@@ -13,9 +13,8 @@
 
 Route::get('/',['as'=>'home','uses' => 'Admin\IndexController@show']);
 Route::get('/about/{id}', 'FirstController@show');
-Route::get('/articles', 'Admin\Core@getArticles');
-Route::get('/article/{id}', 'Admin\Core@getArticle');
-
+Route::get('/articles', ['uses' => 'Admin\Core@getArticles',
+ 'as'=> 'articles']);
 // list pages
 Route::resource('/pages', 'Admin\CoreResource');
 Route::controller('/pages','PagesController');
