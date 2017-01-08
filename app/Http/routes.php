@@ -11,14 +11,11 @@
 |
 */
 
-Route::get('/',['as'=>'home','uses' => 'Admin\IndexController@show']);
+Route::get('/',['as'=>'home','uses' => 'FirstController@show']);
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', ['uses' => 'Admin\Core@getArticles',
  'as'=> 'articles']);
-// list pages
-Route::resource('/pages', 'Admin\CoreResource');
-Route::controller('/pages','PagesController');
+
 Route::get('/article/{page}',['uses'
 => 'Admin\Core@getArticle',
-'as' => 'article',
-'middleware' => 'mymiddle']);
+'as' => 'article']);
