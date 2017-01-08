@@ -28,6 +28,7 @@ class CoreResource extends Controller
     public function create()
     {
         //
+        echo __METHOD__;
     }
 
     /**
@@ -39,6 +40,7 @@ class CoreResource extends Controller
     public function store(Request $request)
     {
         //
+        echo $_POST;
     }
 
     /**
@@ -50,6 +52,7 @@ class CoreResource extends Controller
     public function show($id)
     {
         //
+        echo __METHOD__;
     }
 
     /**
@@ -61,6 +64,7 @@ class CoreResource extends Controller
     public function edit($id)
     {
         //
+        echo __METHOD__;
     }
 
     /**
