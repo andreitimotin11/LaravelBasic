@@ -20,3 +20,4 @@ Route::get('/article/{id}', 'Admin\Core@getArticle');
 
 // list pages
 Route::resource('/pages', 'Admin\CoreResource');
+Route::controller('/pages','PagesController');
