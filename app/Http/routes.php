@@ -21,3 +21,7 @@ Route::get('/article/{id}', 'Admin\Core@getArticle');
 // list pages
 Route::resource('/pages', 'Admin\CoreResource');
 Route::controller('/pages','PagesController');
+Route::get('/article/{page}',['uses'
+=> 'Admin\Core@getArticle',
+'as' => 'article',
+'middleware' => 'mymiddle']);
