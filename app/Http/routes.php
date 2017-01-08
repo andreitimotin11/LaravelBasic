@@ -15,3 +15,5 @@ Route::get('/',['as'=>'home', function () {
     return view('welcome');
 }]);
 Route::get('/about/{id}', 'FirstController@show');
+Route::get('/articles', 'Admin\Core@getArticles');
+Route::get('/article/{id}', 'Admin\Core@getArticle');
