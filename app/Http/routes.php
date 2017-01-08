@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/',['as'=>'home', function () {
     return view('welcome');
-});
+}]);
+
+Route::get('/article/{id}',
+    ['as'=>'article',
+        function ($id) {
+   echo $id;
+}]);
 
 
 Route::get('/page/{id}', function ($id) {
@@ -24,11 +30,11 @@ Route::get('/page/{id}', function ($id) {
 Route::get('/comments', function (){
     print_r($_POST);
 });
-Route::group([], function (){
+Route::group(['prefix'=>'admin'], function (){
     Route::get('page/create', function (){
-        echo 'page/create';
+        return redirect()->route('home');
     });
-    Route::get('page1/create', function (){
+    Route::get('page/edit', function (){
         echo 'page/edit';
     });
 });
