@@ -9,5 +9,14 @@ use App\Http\Controllers\Controller;
 
 class Core extends Controller
 {
-    //
+
+    //list materials
+    public function getArticles(){
+
+    }
+    //material
+    public function getArticle($id){
+
+    }
+
 }
