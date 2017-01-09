@@ -18,7 +18,8 @@ Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
 'as' => 'articles']);
 Route::get('/article/{page}', ['uses' => 'Admin\Core@getArticle',
- 'as' => 'article']);
+ 'as' => 'article',
+'middleware' => 'mymiddle']);
 Route::get('/about', ['uses'=>'FirstController@show',
 'as'=>'about',
 'middleware' => 'mymiddle']);
