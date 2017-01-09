@@ -7,6 +7,7 @@ class FirstController
     extends Controller
 {
     public function show($id){
+        echo "OK <br>";
         echo $id;
     }
 }

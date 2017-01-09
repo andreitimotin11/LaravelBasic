@@ -16,7 +16,7 @@ class Mymiddleware
     public function handle($request, Closure $next)
     {
         //var_dump($request);
-        if($request->route(''))
+        if($request->route('articles'))
         return $next($request);
     }
 }
