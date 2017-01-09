@@ -17,8 +17,12 @@ Route::get('/',['as'=>'home', function () {
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', 'Admin\Core@getArticles');
 Route::get('/article/{id}', 'Admin\Core@getArticle');
+Route::get('/about', ['uses'=>'FirstController@show',
+'as'=>'about',
+'middleware' => 'Mymiddleware']);
 
 // list pages
+
 Route::resource('/pages', 'Admin\CoreResource');
 Route::controller('/pages','PagesController');
 Route::get('/article/{page}',['uses'

@@ -15,6 +15,8 @@ class Mymiddleware
      */
     public function handle($request, Closure $next)
     {
+        //var_dump($request);
+        if($request->route(''))
         return $next($request);
     }
 }
