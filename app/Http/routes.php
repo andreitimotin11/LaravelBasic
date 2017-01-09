@@ -17,11 +17,11 @@ Route::get('/',['as'=>'home', function () {
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
 'as' => 'articles']);
-Route::get('/article/{id}', ['uses' => 'Admin\Core@getArticle',
+Route::get('/article/{page}', ['uses' => 'Admin\Core@getArticle',
  'as' => 'article']);
 Route::get('/about', ['uses'=>'FirstController@show',
 'as'=>'about',
-'middleware' => 'Mymiddleware']);
+'middleware' => 'mymiddle']);
 
 // list pages
 /*
