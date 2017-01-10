@@ -15,9 +15,16 @@ class MyyMiddleware
      */
     public function handle($request, Closure $next)
     {
+
         if($request->route('page') != 'pages'){
             return redirect()->route('home');
         }
-        return $next($request);
+
+
+         //$responce = $next($request);
+         //echo 'Middle';
+         //return $responce;
+
+         return $next($request);
     }
 }

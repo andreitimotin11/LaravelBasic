@@ -11,15 +11,12 @@
 |
 */
 
-Route::get('/',['as'=>'home', function () {
-    return view('welcome');
-}]);
+Route::get('/',['as'=>'home', 'middleware' => 'auth','uses'=>'Admin\IndexController@show' ]);
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
 'as' => 'articles']);
 Route::get('/article/{page}', ['uses' => 'Admin\Core@getArticle',
- 'as' => 'article',
-'middleware' => 'mymiddle']);
+ 'as' => 'article'])->middleware(['mymiddle']);
 Route::get('/about', ['uses'=>'FirstController@show',
 'as'=>'about',
 'middleware' => 'mymiddle']);
