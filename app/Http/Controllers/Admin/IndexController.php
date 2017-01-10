@@ -11,6 +11,6 @@ class IndexController extends Controller
 {
     //
     public function show(){
-        return view('welcome');
+        return view('default.template');
     }
 }

@@ -13,10 +13,10 @@ class MyyMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next, $param)
     {
 
-        if($request->route('page') != 'pages'){
+        if($request->route('page') != 'pages' && $param == 'admin'){
             return redirect()->route('home');
         }
 

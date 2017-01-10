@@ -12,7 +12,7 @@ class Core extends Controller
 
     public function __construct()
     {
-        $this->middleware('mymiddle');
+        //$this->middleware('mymiddle');
     }
 
     //list materials
