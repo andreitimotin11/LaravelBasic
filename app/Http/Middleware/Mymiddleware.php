@@ -16,10 +16,13 @@ class Mymiddleware
     public function handle($request, Closure $next)
     {
         //var_dump($request);
+       /*
         if($request->route('page') != 'pages')
         {
             return redirect()->route('home');
         }
+        */
+       echo 'Middle';
         return $next($request);
     }
 }
