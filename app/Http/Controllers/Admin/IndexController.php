@@ -20,7 +20,8 @@ class IndexController extends Controller
         $view->with('title3','Hello World4!');
 */
         if(view()->exists('default.template')){
-           view()->
+            $path = '';
+           view()->file($path);
             return view('default.template')->with('title','Hello World');
 
         }
