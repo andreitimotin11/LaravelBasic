@@ -21,5 +21,6 @@ class IndexController extends Controller
 */
         if(view()->exists('default.template'))
         return view('default.template')->withTitle('Hello World');
+        abort(404);
     }
 }
