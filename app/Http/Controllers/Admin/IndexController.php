@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
-//use App\Http\Requests;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
@@ -16,6 +16,7 @@ class IndexController extends Controller
 
         $view->with('title','Hello World2!');
         $view->with('title2','Hello World3!');
+        $view->with('title3','Hello World4!');
 
         return $view;
     }
