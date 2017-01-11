@@ -19,8 +19,12 @@ class IndexController extends Controller
         $view->with('title2','Hello World3!');
         $view->with('title3','Hello World4!');
 */
-        if(view()->exists('default.template'))
-        return view('default.template')->with('title','Hello World');
+        if(view()->exists('default.template')){
+           view()->
+            return view('default.template')->with('title','Hello World');
+
+        }
+
         abort(404);
     }
 }
