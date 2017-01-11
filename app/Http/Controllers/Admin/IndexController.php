@@ -12,9 +12,9 @@ class IndexController extends Controller
     //
     public function show(){
       //  return view('default.template', ['title'=>'Hello World!']);
-        /*
-        $view = view('default.template');
 
+        $view = view('default.template');
+/*
         $view->with('title','Hello World2!');
         $view->with('title2','Hello World3!');
         $view->with('title3','Hello World4!');
