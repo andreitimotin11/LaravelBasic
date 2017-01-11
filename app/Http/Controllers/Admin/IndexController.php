@@ -13,6 +13,7 @@ class IndexController extends Controller
     public function show(){
         echo 1;
 
-        return view('default.template', ['title'=>'Hello World!']);
+      //  return view('default.template', ['title'=>'Hello World!']);
+        return view('default.template')->with('title','Hello World2!');
     }
 }
