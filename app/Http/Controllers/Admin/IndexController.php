@@ -2,18 +2,21 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 
-use App\Http\Requests;
+//use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
 {
     //
     public function show(){
-        echo 1;
-
       //  return view('default.template', ['title'=>'Hello World!']);
-        return view('default.template')->with('title','Hello World2!');
+        $view = view('default.template');
+
+        $view->with('title','Hello World2!');
+        $view->with('title2','Hello World3!');
+
+        return $view;
     }
 }
