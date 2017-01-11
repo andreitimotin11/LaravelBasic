@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/',['as'=>'home', 'middleware' => 'auth','uses'=>'Admin\IndexController@show' ]);
+Route::get('/',['as'=>'home', 'middleware' => 'mymiddle','uses'=>'Admin\IndexController@show' ]);
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
     'as' => 'articles']);
