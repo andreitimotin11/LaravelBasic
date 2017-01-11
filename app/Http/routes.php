@@ -12,7 +12,7 @@
 */
 
 Route::get('/',['as'=>'home', 'middleware' => 'mymiddle','uses'=>'Admin\AboutController@show', 'as'=>'home' ]);
-Route::get('/about', 'FirstController@show');
+Route::get('/about', ['uses' => 'FirstController@show', 'as' => 'about']);
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
     'as' => 'articles']);
 Route::get('/article/{id}', ['uses' => 'Admin\Core@getArticle', 'middleware' => 'mymiddle:home',
