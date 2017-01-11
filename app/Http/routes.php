@@ -15,7 +15,7 @@ Route::get('/',['as'=>'home', 'middleware' => 'mymiddle','uses'=>'Admin\IndexCon
 Route::get('/about/{id}', 'FirstController@show');
 Route::get('/articles', [ 'uses' => 'Admin\Core@getArticles',
     'as' => 'articles']);
-Route::get('/article/{page}', ['uses' => 'Admin\Core@getArticle', 'middleware' => 'mymiddle:home',
+Route::get('/article/{id}', ['uses' => 'Admin\Core@getArticle', 'middleware' => 'mymiddle:home',
     'as' => 'article'])/*->middleware(['mymiddle'])*/;
 Route::get('/about', ['uses'=>'FirstController@show',
     'as'=>'about',
